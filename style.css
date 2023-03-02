@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+footer {
+    display: none;
+}
+body {
+    display: flex;
+    justify-content: center;
+    background-color:hsl(222, 26%, 31%);
+    align-items: center;
+    height: 100vh;
+}
+form {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: hsl(223, 31%, 20%);
+    color: white;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    padding: 10px;
+    margin: 10px 0;
+}
+header {
+    display: flex;
+    grid-column: 1/13;
+    grid-row: 1/2;
+    justify-content: space-between;
+    background-color:hsl(222, 26%, 31%);
+}
+.theme {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    justify-content: space-between;
+}
+.theme h3 {
+    text-transform: uppercase;
+}
+.range {
+    display: flex;
+    flex-direction: column;
+}
+.result {
+    grid-column: 1/13;
+    grid-row: 2/5;
+    padding: 10px;
+    text-align: end;
+    font-weight: bold;
+    background-color: hsl(224, 36%, 15%);
+    border-radius: 5px;
+}
+.numbers, .operators {
+    background-color: white;
+    color:hsl(223, 31%, 20%) ;
+    text-align: center;
+    border-radius: 5px;
+    padding: 4px;
+    border-bottom: 1px rgb(218, 211, 115) solid;
+    cursor: pointer;
+}
+.seven,.four,.one,.dec {
+    grid-column: 1/4;
+}
+.eight,.five,.two,.zero  {
+    grid-column: 4/7;
+}
+.nine,.six,.three,.divide {
+    grid-column: 7/10;
+}
+.delete {
+    grid-column: 10/13;
+    background-color: hsl(225, 21%, 49%);
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    border: none;
+}
+.addition,.subtract,.multiply{
+    grid-column: 10/13;
+}
+.reset {
+    grid-column: 1/7;
+    background-color: hsl(225, 21%, 49%);
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 4px;
+    border: none;
+}
+.submit {
+    grid-column: 7/13;
+    background-color:hsl(6, 63%, 50%) ;
+    border-radius: 5px;
+    color: white;
+    padding: 4px;
+    border: none;
+}
